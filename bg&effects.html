@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background and Text Effects Example</title>
+    <style>
+        /* Background Image, Size, and Repeat Example */
+        .background-example {
+            background-image: url('https://images.unsplash.com/photo-1523510468197-455cc987be86?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWVzdGhldGljfGVufDB8fDB8fHww'); /* Background image */
+            background-size: cover; /* Cover the entire area of the container */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            height: 400px; /* Set a height to display the background image */
+            width: 100%; /* Full width of the page */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Text Shadow Example */
+        .text-shadow-example {
+            font-size: 40px;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Shadow with 3px offset */
+        }
+
+        /* Text Stroke Example (Requires webkit for some browsers) */
+        .text-stroke-example {
+            font-size: 60px;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            -webkit-text-stroke: 2px black; /* Adds a 2px black stroke around the text */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Background Image Example -->
+    <div class="background-example">
+        This is an example of background-image, background-size, and background-repeat properties.
+    </div>
+
+    <!-- Text Shadow Example -->
+    <div class="text-shadow-example">
+        This text has a shadow effect.
+    </div>
+
+    <!-- Text Stroke Example -->
+    <div class="text-stroke-example">
+        This text has a stroke effect.
+    </div>
+
+</body>
+</html>

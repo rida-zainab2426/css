@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example - Cursor, Overflow, Animation</title>
+    <style>
+        /* Cursor Example */
+        .cursor-pointer {
+            cursor: pointer; /* Changes the cursor to a pointer on hover */
+        }
+
+        /* Overflow Example */
+        .overflow-container {
+            width: 300px;
+            height: 200px;
+            overflow: auto; /* Allows scrolling if content overflows */
+            border: 2px solid #333;
+            margin-bottom: 20px;
+        }
+
+        /* List Style Example */
+        ul {
+            list-style-type: square; /* Changes bullet points to square */
+        }
+
+        /* Opacity Example */
+        .opacity-container {
+            opacity: 0.5; /* Sets the opacity to 50% */
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Transition Example */
+        .transition-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            transition: all 0.5s ease; /* Adds transition effect */
+        }
+
+        .transition-box:hover {
+            background-color: green;
+            width: 150px;
+        }
+
+        /* Keyframes Animation Example */
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(200px);
+            }
+        }
+
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: slide 3s infinite alternate; /* Runs the slide animation */
+        }
+
+        /* Navbar Style */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar Example -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+    <!-- Cursor Example -->
+    <div class="cursor-pointer">Hover over me, and the cursor changes to a pointer!</div>
+
+    <!-- Overflow Example -->
+    <div class="overflow-container">
+        <p>This container has a fixed size. If the content exceeds the height or width, scrollbars will appear.</p>
+        <p>This is some extra content to demonstrate scrolling.</p>
+    </div>
+
+    <!-- List Style Example -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Opacity Example -->
+    <div class="opacity-container">
+        This box has an opacity of 0.5, so it's semi-transparent.
+    </div>
+
+    <!-- Transition Example -->
+    <div class="transition-box">Hover over me!</div>
+
+    <!-- Animation Example -->
+    <div class="animated-box"></div>
+
+    
+
+</body>
+</html>

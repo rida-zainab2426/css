@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display, Visibility, Position, Z-Index Example</title>
+    <style>
+        /* Display Property Example */
+        .display-example {
+            background-color: #ffcccb;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            display: block; /* Makes the div a block element */
+        }
+
+        /* Visibility Property Example */
+        .visibility-example {
+            background-color: #d3d3d3;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            visibility: hidden; /* Makes the element invisible but still occupies space */
+        }
+
+        /* Position Property Example */
+        .position-example {
+            background-color: #98fb98;
+            width: 200px;
+            height: 200px;
+            position: relative; /* Sets the position relative to its normal position */
+            left: 50px; /* Moves the element 50px to the right */
+            top: 30px; /* Moves the element 30px down */
+        }
+
+        /* Z-Index Property Example */
+        .z-index-example-1 {
+            background-color: #add8e6;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: 1; /* Element will be behind the one with higher z-index */
+        }
+
+        .z-index-example-2 {
+            background-color: #ffb6c1;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: 2; /* Element will be in front of the one with lower z-index */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Display Property Example -->
+    <div class="display-example">
+        This div uses the "display" property with value "block".
+    </div>
+
+    <!-- Visibility Property Example -->
+    <div class="visibility-example">
+        This div uses the "visibility" property with value "hidden".
+        <!-- This will be invisible but still takes up space in the layout -->
+    </div>
+
+    <!-- Position Property Example -->
+    <div class="position-example">
+        This div uses the "position" property with value "relative".
+        <!-- It is moved 50px to the right and 30px down from its original position -->
+    </div>
+
+    <!-- Z-Index Property Example -->
+    <div class="z-index-example-1">
+        This div uses the "z-index" property with value 1.
+        <!-- It will be behind the next div with z-index 2 -->
+    </div>
+
+    <div class="z-index-example-2">
+        This div uses the "z-index" property with value 2.
+        <!-- It will appear on top of the div with z-index 1 -->
+    </div>
+
+</body>
+</html>
